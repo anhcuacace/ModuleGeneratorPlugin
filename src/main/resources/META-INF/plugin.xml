@@ -1,0 +1,20 @@
+<idea-plugin>
+  <id>com.tunanh.modulegenerator</id>
+  <name>Module Generator</name>
+  <vendor email="anhtt2@apero.vn">Test</vendor>
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.lang</depends>
+
+  <description>
+    Plugin để tạo module files theo cấu trúc chuẩn khi chuột phải vào folder.
+  </description>
+
+  <actions>
+    <action id="GenerateModuleAction"
+            class="org.tunanh.modulegeneratorplugin.GenerateModuleAction"
+            text="Generate Feature Module Files"
+            description="Generate standard module files in current folder">
+      <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+    </action>
+  </actions>
+</idea-plugin>
